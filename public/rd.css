@@ -1,75 +1,73 @@
 
 body{
 	font-family: sans-serif;
-	background-size: 1400px 700px;
-	background-color: #189ce970;
+	background-size: cover;
+	background-image: url('bg.png');
 }
 
-h1{
-	padding-top: 15px;
-	padding-bottom: 0px;
-	margin-bottom: 0px;
+.title{
+	padding-top: 70px;
 	text-align: center;
-	font-size: 60px;
+	font-weight: bold;
+	font-size: 50px;
 	color: #e41111;
+	margin-bottom: 8px;
 }
 
-h2{
+h3{
 	text-align: center;
-	padding-top: 0px;
 	color:  #4897c5;
 }
 
 .output{
-	width: 50%;
-	margin-left: 25%;
-	margin-top: 50px;
-	min-height: 200px;
+	min-height: 300px;
 	border: hidden;
-	border-top: 5px dashed white;
 }
 
 .text{
-	padding: 30px 40px;
-	padding-bottom: 10px;
-	left: 25%;
+	padding: 30px 40px 10px;
 	text-align: justify;
 	color: black;
 	font-weight: bold;
 }
 
 .control{
-	width: 50%;
 	padding-bottom: 10px;
 	border: hidden;
-	margin-left: 25%
-}
-
-ul.joke_menu{
-	list-style-type: none;
-	text-align: center;
-	border-bottom: 5px dashed white;
+	/* height: 30px; */
 }
 
 li{
 	display: inline;
 }
+.p-2{
+	width: 200px;
+	color: #e41111;
+}
 
-.previous,.new-joke,.tweet{
-	width: 20%;
-	border: 1px groove black;
+.previous,.new-joke, .tweet{
+	border: 1px solid black;
 	border-radius: 8px;
-	text-decoration: none;
-	margin: 20px 20px;
-	padding: 10px;
 	font-family: sans-serif;
 	color: #e41111;
 	font-weight: bold;
 	font-size: 18px;
 	background-color: white;
 }
+.previous, .new-joke{
+	padding: 10px;
+}
+a{
+	text-decoration: none;
+	padding: 12px;
+}
 
-button.previous:hover, button.new-joke:hover, a.tweet:hover{
+button.previous:hover, button.new-joke:hover, .tweet:hover{
 	background-color: #ffff99;
 	color: #ff0000;
+	text-decoration: none;
+}
+.content{
+	margin: 30px 300px;
+	text-align: center;
 }

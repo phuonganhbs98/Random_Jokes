@@ -6,14 +6,6 @@ previousButton.addEventListener('click', getPrevious);
 var arr = new Array();
 var i = 0;
 function getJoke(){
-	// fetch('https://api.chucknorris.io/jokes/random')
-	// 	.then(function (response){
-	// 	  	return response.json();
- //  		}).then(function(data){
- //  			display(data.value, '.text1');
- //  			arr.push(data.value);
- //  			i = arr.length - 1;
- //  		})
  	axios('https://api.chucknorris.io/jokes/random')
  	.then(function(response){
  		display(response.data.value, '.text');
